@@ -1,0 +1,9 @@
+{
+"TOTAL_MEMORY": 268435456,
+"dataUrl": "SpaceLander Builds.data.unityweb",
+"asmCodeUrl": "SpaceLander Builds.asm.code.unityweb",
+"asmMemoryUrl": "SpaceLander Builds.asm.memory.unityweb",
+"asmFrameworkUrl": "SpaceLander Builds.asm.framework.unityweb",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
+}
