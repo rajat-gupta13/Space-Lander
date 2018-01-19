@@ -27,15 +27,17 @@ public class Done_DestroyByContact : MonoBehaviour
 		if (explosion != null && other.gameObject.tag == "Player")
 		{
 			Instantiate(explosion, transform.position, transform.rotation);
-		}
+            Destroy(gameObject);
+        }
 
 		if (other.gameObject.tag == "Player")
 		{
 			Instantiate(playerExplosion, other.transform.position, other.transform.rotation);
             Destroy(other.gameObject);
             gameController.GameOver();
+            Destroy(gameObject);
         }
-		Destroy (gameObject);
+		
 	}
 
     void LoadLevel()

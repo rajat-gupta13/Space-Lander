@@ -39,6 +39,19 @@ public class Done_GameController : MonoBehaviour
             player.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
             GameOver();
         }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            spawnWait -= 0.025f;
+        }
+        if (Input.GetKey(KeyCode.Q))
+        {
+            player.SetActive(false);
+
+        }
+        else if (Input.GetKeyUp(KeyCode.Q))
+        {
+            player.SetActive(true);
+        }
 	}
 
     void LoadLevel()
